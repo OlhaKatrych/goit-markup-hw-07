@@ -217,13 +217,40 @@ body {
 
 .container {
 
-    
-    align-items: center;
-    width: 1158px;
+    /*basic styles*/
+
+    min-width: 320px;
+    max-width: 396px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
+   
+    
     
 
+    outline: 3px solid green;
+    
+    
+
+}
+
+/*Tablet screen*/
+
+@media only screen and (min-width: 768px) {
+   .container {
+     
+    max-width: 736px;
+
+  }
+}
+
+/*Desktop screen*/
+
+@media only screen and (min-width: 1158px) {
+   .container {
+    max-width: 1128px;
+    padding: 0 15px;
+    align-items: center;
+  }
 }
 
 .header-container {
