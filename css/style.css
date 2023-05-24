@@ -20,8 +20,10 @@
     /*Cards Set*/
 
     --indent: 24px;
+    --indent-vertical: 72px;
     --vertical: 48px;
     --items-images: 4;
+    
 }
 
 /*Hidden*/
@@ -72,10 +74,22 @@ body {
 
 /*Sections*/
 
-.section {
 
+
+@media only screen and (min-width: 768px) {
+  .section {
+
+    padding: 96px 0;
+
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+   .section{
 
     padding: 120px 0;
+
+  }
 }
 
 .logo-studio {
@@ -506,8 +520,28 @@ justify-content: center;
 .team-list {
 
     display: flex;
-    gap: var(--indent);
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 72px;
     border-radius: 0px 0px 4px 4px;
+
+}
+
+@media only screen and (min-width: 768px) {
+   .team-list {
+    
+    row-gap: 64px;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+   .team-list {
+    
+    column-gap: 24px;
+
+    
+  }
 }
 
 
