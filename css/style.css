@@ -88,6 +88,8 @@ body {
    .section{
 
     padding: 120px 0;
+    margin: 0 auto;
+  
 
   }
 }
@@ -251,19 +253,14 @@ body {
 /*Tablet screen*/
 
 @media only screen and (min-width: 768px) {
-   .container {
+   
+    .container {
      
     max-width: 736px;
 
-  }
-
-  .team-section {
-
-   
-    width: 768px;
-   
-  }
+    }
 }
+
 
 /*Desktop screen*/
 
@@ -272,6 +269,7 @@ body {
     max-width: 1128px;
     padding: 0 15px;
     align-items: center;
+    
   }
 
   .team-section {
@@ -476,19 +474,12 @@ body {
     text-align: center;
   }
 
-  .features-text {
 
-    
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
 
-    .features-section {
 
-        width: 736px;
-    }  
- 
     .features-cards-set  {
     
         flex-wrap: wrap;
@@ -725,6 +716,25 @@ justify-content: center;
 
 /*Customers section*/
 
+@media only screen and (min-width: 1158px) {
+   .customers-section {
+
+    width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    
+    .customers-section {
+
+        padding: 96px 0;
+    
+  }
+}
+
 .customers-list {
 
     display: flex;
@@ -733,6 +743,25 @@ justify-content: center;
     gap: 24px;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  
+    .customers-list {
+
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    
+    .customers-list {
+    
+            flex-wrap: wrap;
+            gap: 72px 24px;
+    
+        }
+}
 .customers-link {
 
     display: flex;
