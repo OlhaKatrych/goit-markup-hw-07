@@ -444,7 +444,7 @@ body {
     gap: var(--indent);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767.8px) {
    
     .features-cards-set {
     
@@ -453,8 +453,14 @@ body {
   }
 }
 
+@media only screen and (max-width: 1157.8px) {
+ 
+    .features-cards-set {
+    
+        
 
-
+    }
+}
 
 /*.features-cards-item {
 
