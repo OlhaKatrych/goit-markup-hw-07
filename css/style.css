@@ -457,7 +457,8 @@ body {
  
     .features-cards-set {
     
-        
+        flex-wrap: wrap;
+        gap: 72px 24px;
 
     }
 }
