@@ -71,7 +71,7 @@ body {
 
     .container {
 
-        max-width: 736px;
+        max-width: 768px;
 
     }
 }
@@ -134,9 +134,12 @@ body {
 
 @media only screen and (min-width: 1158px) {
    .section{
-
+    width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
     padding: 120px 0;
     margin: 0 auto;
+
   
 
   }
@@ -373,6 +376,73 @@ body {
     color: #404BBF;
 }
 
+/*Mobile menu*/
+
+.menu-toggle {
+
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+    padding: 40px;
+    padding-top: 80px;
+    background-color: #fff;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.mobile-menu {
+    margin-bottom: auto;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+}
+
+.mobile-contacts {
+    margin-bottom: 48px;
+}
+
+@media only screen and (min-width: 768px) {
+.menu-toggle {
+    
+    display: none;
+  }
+}
+*/
 
 /*Hero section*/
 
@@ -441,8 +511,20 @@ body {
 .features-cards-set {
 
     display: flex;
-    gap: var(--indent);
+    flex-wrap: wrap;
+    gap: 72px 24px;
 }
+
+
+
+ @media only screen and (min-width: 768px) {
+
+     .features-item {
+
+        max-width: 356px;
+
+     }
+ }
 
 @media only screen and (max-width: 767.8px) {
    
@@ -453,16 +535,7 @@ body {
   }
 }
 
- @media only screen and (min-width: 768px) {
  
-    .features-cards-set {
-
-   
-    flex-basis:calc ((100%-24px)/2);
-        
-    }
- }
-
 /*.features-cards-item {
 
    flex-basis: calc((100% - 72px) / 4);
@@ -538,11 +611,7 @@ body {
 
 @media only screen and (min-width: 1158px) {
 
-    .features-section{
-        width: 1440px;
-        padding-left: 156px;
-        padding-right: 156px;
-    }
+   
    .features-cards-set {
      flex-wrap: nowrap;
   }
@@ -610,15 +679,7 @@ justify-content: center;
   }
 }
 
-@media only screen and (min-width: 1158px) {
-   
-   .images-section {
-    
-        width: 1440px;
-        padding-left: 156px;
-        padding-right: 156px;
-  }
-}
+
 
 /*Team section3*/
 
@@ -749,15 +810,7 @@ justify-content: center;
 /*Customers section*/
 
 
-@media only screen and (min-width: 1158px) {
-   .customers-section {
 
-    width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;
-    
-  }
-}
 
 
 
