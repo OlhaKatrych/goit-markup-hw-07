@@ -51,36 +51,15 @@
           </ul>
         </nav>
 
-        <!--Mobile menu-->
-
-        <div class="menu-container js-menu-container" id="mobile-menu">
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg class="menu-hamburger" width="32" height="22">
-              <use href="./images/icons.svg#menu-hamburger"></use>
-            </svg>
-          </button>
-
-          <ul class="mobile-menu list">
-            <li><a href="" class="link">Studio</a></li>
-            <li><a href="" class="link">Portfolio</a></li>
-            <li><a href="" class="link">Contacts</a></li>
-          </ul>
-
-          <ul class="mobile-contacts list">
-            <li>
-              <a href="tel:110001111111" class="link">+11 (000) 111-11-11</a>
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-        </div>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-hamburger" width="32" height="22">
+            <use href="./images/icons.svg#menu-hamburger"></use>
+          </svg>
+        </button>
 
         <address class="contacts">
           <ul class="header-contacts-list">
@@ -734,7 +713,29 @@
         </form>
       </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
+
+    <!--Mobile Menu-->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="menu-hamburger" width="32" height="22">
+          <use href="./images/icons.svg#menu-hamburger"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="" class="link">About</a></li>
+        <li><a href="" class="link">Products</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+        <li><a href="" class="link">Career</a></li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
