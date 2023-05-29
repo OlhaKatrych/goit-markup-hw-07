@@ -395,11 +395,9 @@ body {
 /*Hero section*/
 
 
-.hero-section {
+.hero {
     
     max-width: 1440px;
-    height: 432px;
-    padding: 112px 0;
     margin: 0 auto;
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/hero/people_mob@1x-min.jpg);
@@ -409,18 +407,22 @@ body {
     }
 
   
-
-@media only screen and (min-width: 429px) {
-    .hero-section {
     
-        background-image: url(../images/main-page/hero/people_tab@1x-min.jpg);
-  }
+
+  
+
+@media  screen and (min-width: 429px) {
+    .hero{
+    
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/hero/people_tab@1x-min.jpg);
+  
+}
 }
 
 @media only screen and (min-width: 769px) {
-.hero-section {
+.hero {
 
-    background-image: url(../images/main-page/hero/people_desk@1x-min.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/hero/people_desk@1x-min.jpg);
     
   }
 }
