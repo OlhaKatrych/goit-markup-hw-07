@@ -81,7 +81,7 @@ body {
 
 @media only screen and (min-width: 1158px) {
     .container {
-        max-width: 1128px;
+        max-width: 1158px;
         padding: 0 15px;
         align-items: center;
 
@@ -1015,6 +1015,14 @@ justify-content: center;
   }
 }
 
+@media only screen and (min-width: 1158px) {
+   .social-container {
+
+    margin-right: 80px;
+    
+  }
+}
+
 .social-text {
 
 
@@ -1092,6 +1100,13 @@ justify-content: center;
   }
 }
 
+@media only screen and (min-width: 1158px) {
+    .subscribe-container {
+
+        margin-left: auto;
+    }
+}
+
 
 
 .subscribe-text {
@@ -1118,13 +1133,7 @@ justify-content: center;
   }
 }
 
-@media only screen and (min-width: 1158px) {
-   .subscribe-form {
 
-    display: block;
-    
-  }
-}
 
 .subscribe-input {
 
