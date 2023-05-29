@@ -106,12 +106,25 @@ body {
     text-transform: uppercase;
     padding-top: 1.5px;
     padding-bottom: 1.5px;
-    margin-right: 76px;
+
     padding: 24px 0;
     color: var(--color-iris);    
     
 }
 
+@media only screen and (min-width: 768px) {
+.logo {
+    
+    margin-right: 120px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+.logo {
+    
+    margin-right: 76px;
+  }
+}
 
 /*Sections*/
 
@@ -185,6 +198,8 @@ body {
  img {
 
     display: block;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -379,20 +394,38 @@ body {
 
 /*Hero section*/
 
+
 .hero-section {
     
     max-width: 1440px;
     margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
     background-color: #2E2F42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/hero/img-name.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/hero/people_mob@1x-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     }
 
+.hero-section.section {
 
+    min-width: 320px;
+    padding: 112px 0;
+}   
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+    
+        background-image: url(../images/main-page/hero/people_tab@1x-min.jpg);
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+.hero-section {
+
+    background-image: url(../images/main-page/hero/people_desk@1x-min.jpg);
+    
+  }
+}
 
 .hero-title {
 
@@ -1469,10 +1502,52 @@ justify-content: center;
     padding: 10px;
 }
 
+
+
+.mobile-menu-link {
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-navy-blue);
+    margin-bottom: 40px;
+    
+}
+
+
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+
+    color: var(--color-ocean);
+}
+
 .mobile-contacts {
     margin-bottom: 48px;
 }
 
+.mobile-contacts-link{
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--color-slate);
+}
+
+.mobile-contacts-link:hover,
+.mobile-contacts-link:focus {
+
+    color: var(--color-ocean);
+}
+
+.mobile-socials {
+
+    justify-content: flex-start;
+    gap: 56px;
+}
 
 @media only screen and (min-width: 768px) {
     .menu-toggle {
@@ -1480,3 +1555,4 @@ justify-content: center;
         display: none;
     }
 }
+
