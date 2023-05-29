@@ -398,6 +398,8 @@ body {
 .hero-section {
     
     max-width: 1440px;
+    height: 432px;
+    padding: 112px 0;
     margin: 0 auto;
     background-color: #2E2F42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/main-page/hero/people_mob@1x-min.jpg);
@@ -406,20 +408,16 @@ body {
     background-size: cover;
     }
 
-.hero-section.section {
+  
 
-    min-width: 320px;
-    padding: 112px 0;
-}   
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 429px) {
     .hero-section {
     
         background-image: url(../images/main-page/hero/people_tab@1x-min.jpg);
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 769px) {
 .hero-section {
 
     background-image: url(../images/main-page/hero/people_desk@1x-min.jpg);
@@ -429,23 +427,23 @@ body {
 
 .hero-title {
 
-    display: flex;
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #FFFFFF;
     margin: 0 auto;
-    max-width: 496px;
-    margin-bottom:48px;
+    margin-bottom: 72px;
+    max-width: 320px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--color-white);
      
 }
 
 .hero-btn {
 
         display: block;
-        font-family: Roboto, sans-serif;
+        font-family: inherit;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
@@ -453,7 +451,6 @@ body {
         color: #FFFFFF;
         background: #4D5AE5;
         cursor: pointer;
-        text-align: center;
         padding: 16px 32px;
         border-radius: 4px;
         box-shadow: var(--hero-btn-shadow);
