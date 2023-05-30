@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
       rel="stylesheet"
     />
 
@@ -52,7 +52,8 @@
         </nav>
 
         <button
-          class="menu-toggle js-open-menu"
+          type="button"
+          class="menu-hamburger js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
@@ -734,14 +735,20 @@
     <!--Mobile Menu-->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
+      <button type="button" class="menu-toggle js-close-menu">
         <svg class="modal-close-icon" width="8" height="8">
           <use href="./images/icons.svg#close-icon"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu list">
-        <li><a href="./index.html" class="mobile-menu-link link">Studio</a></li>
+        <li>
+          <a
+            class="mobile-menu-link active-mobile-link link"
+            href="./index.html"
+            >Studio</a
+          >
+        </li>
         <li>
           <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
         </li>
@@ -749,22 +756,24 @@
       </ul>
 
       <ul class="mobile-contacts list">
-        <li class="mobile-menu-link contacts-phone">
-          <a href="tel:110001111111" class="header-contacts contacts-link link"
+        <li>
+          <a
+            class="mobile-menu-link active-mobile-phone contacts-phone link"
+            href="tel:110001111111"
             >+11 (000) 111-11-11</a
           >
         </li>
 
-        <li class="mobile-contacts-link contacts-email">
+        <li>
           <a
+            class="mobile-contacts-link contacts-email link"
             href="mailto:info@devstudio.com"
-            class="header-contacts contacts-link link"
             >info@devstudio.com</a
           >
         </li>
       </ul>
 
-      <ul class="mobile-socials socials list">
+      <ul class="mobile-socials list">
         <li class="socials-item">
           <a
             href=""
