@@ -1757,8 +1757,13 @@ justify-content: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--color-navy-blue);
-    margin-bottom: 40px;
     
+    
+}
+
+.mobile-contacts-item {
+
+    margin-bottom: 40px;
 }
 
 .active-mobile-link {
@@ -1766,10 +1771,11 @@ justify-content: center;
     color: var(--color-ocean);
 }
 
-.active-mobile-phone{
+.active-mobile-phone {
 
     display: block;
     color: var(--color-iris);
+    font-size: 28px;
 }
 
 .mobile-menu-link:hover,
